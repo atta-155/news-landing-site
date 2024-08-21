@@ -1,28 +1,20 @@
 import React from 'react';
 import HeroSectionCover from '../assets/hero-section-cover.jpg';
-import happening from '../assets/happening/happening-2.jpg';
 function HeroSection() {
     return (
         <div className="container-fluid">
             <div className="row align-items-center justify-content-center">
-                {/* Main Content */}
-                <div className="col-lg-8 p-0">
-                    <div className="image-overlay-container">
-                        <img
-                            src={happening}
-                            alt="World News"
-                            className="img-fluid w-100"
-                        />
-                        <div className="image-overlay">
-                            <div className="overlay-content text-white">
-                                <div className="title" style={{color: "#fff"}}>WORLD NEWS</div>
-                                <hr style={{ height: '2px', backgroundColor: "#fff", border: 'none', margin: '35px 0px', opacity: '1'}} />
-                                <h4 className="fw-semibold">Amazing places in America to visit.</h4>
-                                <p>
-                                    For some reason – this country, this city, this neighborhood, this particular street – is the place you are living a majority of your life in.
-                                </p>
-                                <button className="btn btn-danger mt-3">LEARN MORE</button>
-                            </div>
+
+                <div className="col-lg-8 p-0" style={{ height: "600px", backgroundImage: `url(${HeroSectionCover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                    <div className="d-flex flex-column justify-content-center align-items-center" style={{ height: "100%" }}>
+                        <div className="w-75 w-sm-100 p-sm-0 p-md-5 ">
+                            <div className="title" style={{ color: "#fff" }}>WORLD NEWS</div>
+                            <div><hr style={{ height: '1px', backgroundColor: "#fff", border: 'none', margin: '35px 0px', opacity: '1' }} /></div>
+                            <div className='title text-white'>Amazing places in America to visit.</div>
+                            <p className='text-white'>
+                                For some reason – this country, this city, this neighborhood, this particular street – is the place you are living a majority of your life in.
+                            </p>
+                            <button className="btn btn-danger mt-3">LEARN MORE</button>
                         </div>
                     </div>
                 </div>
@@ -30,7 +22,7 @@ function HeroSection() {
                 {/* Sidebar */}
                 <div className="col-lg-4">
                     <div className="d-flex flex-column justify-content-center align-items-center" style={{ height: "100%" }}>
-                        <div className="w-75 w-sm-100 p-sm-0 p-md-5">
+                        <div className="w-75 w-sm-100 py-5">
                             <div className='d-flex justify-content-between'>
                                 <div className="title" style={{ textAlign: 'start' }}>MORE NEWS</div>
                                 <div>

@@ -55,13 +55,15 @@
 .content-text{
   color: #969696;
 }
-
+.navbar-brand{
+  color: #FB6980;
+}
 /* Hero Section */
 .image-overlay-container {
   position: relative;
 }
 
-.image-overlay-container img {
+.image-overlay-container {
   max-height: 600px;
   object-fit: cover;
 }
